@@ -1,0 +1,33 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #91f 0%, #40f 100%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ControlTower {
+  position: relative;
+}
+
+.landing-plane {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* animation: movePlane 5s linear infinite; /* Add animation */
+}
+
+@keyframes movePlane {
+  0% {
+    transform: translateX(0);
+    transform: translatey(0);
+  }
+  100% {
+    transform: translatey(100%);
+    transform: translateX(100%);
+  }
+}
